@@ -107,7 +107,7 @@ extension Settings and persist to `./config.json`. Env vars:
 | `ADVERTISE_HOST` | auto LAN IP | host in the URL handed to Roon (override if autodetect is wrong) |
 | `CONTAINER` | `ogg` | `ogg` (Ogg-FLAC) or `flac` |
 | `ITUNES_COUNTRY` | `US` | iTunes storefront for the artwork fallback (e.g. `TW`) |
-| `POLL_MS` | `1500` | Music.app metadata poll interval |
+| `POLL_MS` | `700` | Music.app metadata poll interval |
 | `SOX` / `FFMPEG` | `sox`/`ffmpeg` | binary paths |
 | `LOG_LEVEL` | `info` | `debug` shows the Roon protocol trace + all messages |
 
@@ -135,3 +135,7 @@ Roon** (different catalog). For the easiest “keep Apple Music” path with nat
 phone/Mac transport, use **AirPlay 2** directly (≈CD quality, Roon not the
 controller). This project exists for when **Apple Music specifically, inside a Roon
 zone, losslessly** is the goal.
+
+## License
+
+MIT — free to use and modify; just keep the copyright and license notice. See [LICENSE](LICENSE).

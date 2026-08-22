@@ -4,19 +4,24 @@
   "description": "Stream all Mac audio (primarily Apple Music) into a Roon zone as a native source, with now-playing metadata, transport buttons, and zone selection.",
   "type": "module",
   "private": true,
-  "bin": { "mac2roon": "src/index.mjs" },
+  "bin": {
+    "mac2roon": "src/index.mjs"
+  },
   "scripts": {
     "start": "node src/index.mjs",
     "devices": "node src/devices.mjs",
     "test:audio": "node src/audio-selftest.mjs",
     "check": "for f in src/*.mjs; do node --check \"$f\" || exit 1; done && echo OK"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "node-roon-api": "github:roonlabs/node-roon-api",
     "node-roon-api-audioinput": "github:roonlabs/node-roon-api-audioinput",
     "node-roon-api-settings": "github:roonlabs/node-roon-api-settings",
     "node-roon-api-status": "github:roonlabs/node-roon-api-status",
     "node-roon-api-transport": "github:roonlabs/node-roon-api-transport"
-  }
+  },
+  "license": "MIT"
 }
